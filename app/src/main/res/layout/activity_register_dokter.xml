@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterPasienActivity">
+    tools:context=".RegisterDokterActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/background_register"/>
+            android:background="@drawable/bg_register_dokter"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -24,18 +24,17 @@
             android:background="@drawable/icon_register" />
 
         <ImageView
-            android:id="@+id/btnDaftarPasien"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="255dp"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/background_lengkapi"/>
+            android:background="@drawable/bg_lengkapi_dokter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="295dp"
+            android:layout_marginTop="290dp"
             android:fontFamily="@font/inter_semibold"
             android:text="Lengkapi data diri Anda"
             android:textSize="20sp" />
@@ -95,9 +94,9 @@
             android:layout_marginTop="550dp"
             android:background="@drawable/rounded_input2"
             android:fontFamily="@font/inter"
-            android:hint="Alamat email"
+            android:hint="Nama instansi rumah sakit/kesehatan"
             android:paddingStart="18dp"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:textSize="12sp"/>
 
         <EditText
@@ -107,17 +106,30 @@
             android:layout_marginTop="600dp"
             android:background="@drawable/rounded_input2"
             android:fontFamily="@font/inter"
+            android:hint="Alamat email"
+            android:paddingStart="18dp"
+            android:inputType="textEmailAddress"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="650dp"
+            android:background="@drawable/rounded_input2"
+            android:fontFamily="@font/inter"
             android:hint="Kata sandi"
             android:paddingStart="18dp"
             android:inputType="textPassword"
             android:textSize="12sp"/>
 
         <ImageButton
+            android:id="@+id/btnDaftarDokter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button_daftar"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="660dp"/>
+            android:layout_marginTop="700dp"/>
 
         <TextView
             android:layout_width="wrap_content"

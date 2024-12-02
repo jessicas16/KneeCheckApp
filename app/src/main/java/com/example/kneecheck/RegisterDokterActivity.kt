@@ -3,17 +3,17 @@ package com.example.kneecheck
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.kneecheck.databinding.ActivityRegisterPasienBinding
+import com.example.kneecheck.databinding.ActivityRegisterDokterBinding
 
-class RegisterPasienActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityRegisterPasienBinding
+class RegisterDokterActivity : AppCompatActivity() {
+    private lateinit var binding : ActivityRegisterDokterBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityRegisterPasienBinding.inflate(layoutInflater)
+        binding = ActivityRegisterDokterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnDaftarPasien.setOnClickListener {
+        binding.btnDaftarDokter.setOnClickListener {
 
         }
     }
