@@ -36,24 +36,19 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val emailEt: EditText = binding.emailEditText
-        val passwordEt: EditText = binding.passwordEditText
-        val loginBtn: TextView = binding.loginButton
-        val registerBtn: TextView = binding.daftar
-
-        loginBtn.setOnClickListener {
-            val email = emailEt.text.toString()
-            val password = passwordEt.text.toString()
+        binding.loginButton.setOnClickListener {
+            val email = binding.emailEditText.text.toString()
+            val password = binding.passwordEditText.text.toString()
 
             if (email.isEmpty()) {
-                emailEt.error = "Email is required"
-                emailEt.requestFocus()
+                binding.emailEditText.error = "Email tidak boleh kosong"
+                binding.emailEditText.requestFocus()
                 return@setOnClickListener
             }
 
             if (password.isEmpty()) {
-                passwordEt.error = "Password is required"
-                passwordEt.requestFocus()
+                binding.passwordEditText.error = "Password tidak boleh kosong"
+                binding.passwordEditText.requestFocus()
                 return@setOnClickListener
             }
 
@@ -76,7 +71,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        registerBtn.setOnClickListener {
+        binding.daftar.setOnClickListener {
             val intent = Intent(baseContext, ChooseProfileActivity::class.java)
             startActivity(intent)
         }

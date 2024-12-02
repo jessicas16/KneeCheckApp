@@ -24,7 +24,7 @@ interface ApiService {
     ): Any
 
     @POST("register/dokter")
-    suspend fun registerDokterDTO(
+    suspend fun registerDokter(
         @Body regDokter : registerDokterDTO
     ): Any
 

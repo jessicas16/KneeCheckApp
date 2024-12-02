@@ -9,21 +9,21 @@ data class loginDTO (
 )
 
 data class registerPasienDTO(
-    val nama: String,
+    val name: String,
     val email: String,
     val password: String,
-    val jenisKelamin: String,
-    val domisili: String,
-    val tanggalLahir: String,
+    val gender: String,
+    val address: String,
+    val birth: String,
 )
 
 data class registerDokterDTO(
-    val nama: String,
+    val name: String,
     val email: String,
     val password: String,
-    val jenisKelamin: String,
-    val domisili: String,
-    val instansi: String,
+    val gender: String,
+    val address: String,
+    val hospital: String,
 )
 
 data class updateProfilePasienDTO(

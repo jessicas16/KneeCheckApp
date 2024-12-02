@@ -24,6 +24,6 @@ class DefaultRepo (
     }
 
     suspend fun registerDokter(user : registerDokterDTO): Any{
-        return dataSourceRemote.registerDokterDTO(user)
+        return dataSourceRemote.registerDokter(user)
     }
 }

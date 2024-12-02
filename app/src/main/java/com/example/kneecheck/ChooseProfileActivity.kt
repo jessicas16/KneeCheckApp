@@ -21,17 +21,18 @@ class ChooseProfileActivity : AppCompatActivity() {
             //move to register dokter
             val intent = Intent(baseContext, RegisterDokterActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         binding.opsipasien.setOnClickListener {
             //move to register pasien
             val intent = Intent(baseContext, RegisterPasienActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         binding.btnBack.setOnClickListener {
             onBackPressed()
-
         }
     }
 }
