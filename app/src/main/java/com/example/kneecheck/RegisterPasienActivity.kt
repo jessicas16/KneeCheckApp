@@ -66,6 +66,13 @@ class RegisterPasienActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            //format tgl lahir yyyy-mm-dd
+            if (!tanggalLahir.matches(Regex("^[0-9]{4}-[0-9]{2}-[0-9]{2}$"))) {
+                binding.etTanggalLahirPasien.error = "Format Tanggal Lahir salah (yyyy-mm-dd)"
+                binding.etTanggalLahirPasien.requestFocus()
+                return@setOnClickListener
+            }
+
             if (domisili.isEmpty()) {
                 binding.etDomisiliPasien.error = "Kota Domisili tidak boleh kosong"
                 binding.etDomisiliPasien.requestFocus()
