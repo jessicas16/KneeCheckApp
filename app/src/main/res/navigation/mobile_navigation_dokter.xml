@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_dashboarddokter"
+        android:name="com.example.kneecheck.dokter.uidokter.dashboarddokter.DashboardDokterFragment"
+        tools:layout="@layout/fragment_dashboard_dokter" />
+
+    <fragment
+        android:id="@+id/navigation_scandokter"
+        android:name="com.example.kneecheck.dokter.uidokter.scandokter.ScanDokterFragment"
+        tools:layout="@layout/fragment_scan_dokter" />
+
+    <fragment
+        android:id="@+id/navigation_historidokter"
+        android:name="com.example.kneecheck.dokter.uidokter.historidokter.HistoriDokterFragment"
+        tools:layout="@layout/fragment_histori_dokter" />
+
+    <fragment
+        android:id="@+id/navigation_profiledokter"
+        android:name="com.example.kneecheck.dokter.uidokter.profiledokter.ProfileDokterFragment"
+        tools:layout="@layout/fragment_profile_dokter" />
+</navigation>

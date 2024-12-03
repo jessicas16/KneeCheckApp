@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tanggal" type="id">tanggal</item>
+    <item name="nama" type="id">nama</item>
+    <item name="level" type="id">level</item>
+</resources>
