@@ -2,6 +2,7 @@ package com.example.kneecheck.config
 
 import com.example.kneecheck.entity.BasicDRO
 import com.example.kneecheck.entity.LoginDRO
+import com.example.kneecheck.entity.dashboardDokter
 import com.example.kneecheck.entity.dashboardDokterData
 import com.example.kneecheck.entity.loginDTO
 import com.example.kneecheck.entity.registerDokterDTO
@@ -32,6 +33,6 @@ interface ApiService {
 
     @GET("dashboard")
     suspend fun getDashboard(
-        @Header("Authorization") token: String
-    ): dashboardDokterData
+        @Header("authorization") token: String
+    ): dashboardDokter
 }

@@ -47,12 +47,24 @@ class DashboardFragment : Fragment() {
         val id = arguments?.getString("id")
         val name = arguments?.getString("name")
         val token = arguments?.getString("token")
-        Log.d("ID dashboardskjsksk", id.toString())
+        Log.d("ID dashboardskjsksk", token.toString())
 
         binding.tvNamaDokter.text = name
 
+        //get data from api
         ioScope.launch {
-
+            try {
+                val res = repo.getDashboard(token.toString())
+                mainScope.launch {
+                    Toast.makeText(context, "Berhasil", Toast.LENGTH_SHORT).show()
+                    Log.d("Data dashboarddddd", res.toString())
+                }
+            } catch (e: Exception){
+                Log.e("Error API", e.message.toString())
+                mainScope.launch {
+                    Toast.makeText(context, "Terjadi kesalahan", Toast.LENGTH_SHORT).show()
+                }
+            }
         }
 
         makePieChart()
