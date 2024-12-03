@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">KneeCheck</string>
     <string name="app_logo">KneeCheck</string>
-    <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_histori">Histori</string>
+    <string name="title_profile">Profile</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -18,4 +19,12 @@
     <string name="title_activity_bottom_navigation_pasien">BottomNavigationPasien</string>
     <string name="title_activity_dokter">DokterActivity</string>
     <string name="osteoarthritis">Osteoarthritis adalah peradangan kronis di sendi akibat kerusakan pada tulang rawan. Osteoarthritis adalah jenis arthritis atau radang sendi yang paling sering terjadi. Kondisi ini menyebabkan keluhan, seperti sendi-sendi terasa sakit, kaku, dan bengkak.</string>
+    <string name="title_activity_bottom_navigation_dokter">BottomNavigationDokter</string>
+    <string name="syarat_scan">1. Pastikan gambar terlihat jelas (tidak gelap dan tidak terlalu terang)\n
+2. Pastikan tidak ada bagian X-ray yang terpotong\n
+3. Gambar harus bebas dari noise, noda, atau tanda yang menghalangi struktur utama X-ray</string>
+    <string name="bg_image_description">syarat scan</string>
+    <string name="xray_image_description">gambar scan</string>
+    <string name="gallery_button_description">galeri</string>
+    <string name="check_button_description">periksa</string>
 </resources>

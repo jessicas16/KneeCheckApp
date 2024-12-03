@@ -1,13 +1,15 @@
+package com.example.kneecheck.dokter
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.kneecheck.databinding.FragmentProfileBinding
+import com.example.kneecheck.databinding.FragmentScanDokterBinding
 
-class ProfileFragment : Fragment() {
+class ScanDokterFragment : Fragment() {
 
-    private var _binding: FragmentProfileBinding? = null
+    private var _binding: FragmentScanDokterBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -18,7 +20,7 @@ class ProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        _binding = FragmentScanDokterBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         return root

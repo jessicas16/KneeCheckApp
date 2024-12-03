@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.kneecheck.R
 import com.example.kneecheck.config.ApiConfiguration
 import com.example.kneecheck.config.DefaultRepo
-import com.example.kneecheck.databinding.FragmentDashboardBinding
+import com.example.kneecheck.databinding.FragmentDashboardDokterBinding
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.data.PieData
@@ -22,8 +22,8 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class DashboardFragment : Fragment() {
-    private var _binding: FragmentDashboardBinding? = null
+class DashboardDokterFragment : Fragment() {
+    private var _binding: FragmentDashboardDokterBinding? = null
     lateinit var pieChart: PieChart
     private val binding get() = _binding!!
     private var repo: DefaultRepo = ApiConfiguration.defaultRepo
@@ -39,7 +39,7 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+        _binding = FragmentDashboardDokterBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         binding.tvNamaDokter.text = "hailsdafjjlasdjhadsjksdaljkasdljkdasljksd"
