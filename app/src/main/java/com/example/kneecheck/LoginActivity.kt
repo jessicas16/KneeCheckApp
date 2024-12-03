@@ -65,8 +65,9 @@ class LoginActivity : AppCompatActivity() {
 //                            val intent = Intent(this@LoginActivity, LandingPagePasienActivity::class.java)
 //                            startActivity(intent)
                         } else {
-//                            val intent = Intent(this@LoginActivity, LandingPageDokterActivity::class.java)
-//                            startActivity(intent)
+                            val intent = Intent(this@LoginActivity, DokterActivity::class.java)
+                            startActivity(intent)
+//                            finish()
                         }
                     }
                 } catch (e: Exception) {
