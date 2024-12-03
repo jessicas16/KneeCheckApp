@@ -7,6 +7,7 @@
     tools:context=".dokter.dashboard.DashboardFragment">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="89dp"
         android:background="@drawable/background_header"
@@ -36,18 +37,29 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
-                android:textColor="@color/black"
-                android:text="Selamat Datang," />
+                android:text="Selamat Datang,"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/tvNamaDokter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
-                android:textColor="@color/black"
-                android:text="nama dokter"/>
+                android:text="nama dokter"
+                android:textColor="@color/black" />
         </LinearLayout>
 
     </LinearLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

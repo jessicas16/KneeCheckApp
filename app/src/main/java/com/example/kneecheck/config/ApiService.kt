@@ -2,13 +2,14 @@ package com.example.kneecheck.config
 
 import com.example.kneecheck.entity.BasicDRO
 import com.example.kneecheck.entity.LoginDRO
+import com.example.kneecheck.entity.dashboardDokterData
 import com.example.kneecheck.entity.loginDTO
 import com.example.kneecheck.entity.registerDokterDTO
 import com.example.kneecheck.entity.registerPasienDTO
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
-import retrofit2.http.Query
+import retrofit2.http.Header
 
 interface ApiService {
     @GET("users")
@@ -28,4 +29,9 @@ interface ApiService {
     suspend fun registerDokter(
         @Body regDokter : registerDokterDTO
     ): Any
+
+    @GET("dashboard")
+    suspend fun getDashboard(
+        @Header("Authorization") token: String
+    ): dashboardDokterData
 }

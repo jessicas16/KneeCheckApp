@@ -68,9 +68,6 @@ dependencies {
     kapt("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
     implementation ("com.squareup.picasso:picasso:2.8")
 
-    // room db
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
-    implementation("androidx.room:room-ktx:2.6.1")
-    implementation("androidx.room:room-runtime:2.6.1")
-    kapt("androidx.room:room-compiler:2.6.1")
+    //pie chart
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }

@@ -27,4 +27,8 @@ class DefaultRepo (
     suspend fun registerDokter(user : registerDokterDTO): Any{
         return dataSourceRemote.registerDokter(user)
     }
+
+    suspend fun getDashboard(token: String): Any{
+        return dataSourceRemote.getDashboard(token)
+    }
 }

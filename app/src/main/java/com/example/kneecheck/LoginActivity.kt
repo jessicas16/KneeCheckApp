@@ -61,11 +61,13 @@ class LoginActivity : AppCompatActivity() {
                     val res = repo?.login(login)
                     mainScope.launch {
                         Toast.makeText(this@LoginActivity, "Login Success", Toast.LENGTH_SHORT).show()
-                        if (res?.userType == "pasien") {
+                        if (res?.userType == "Pasien") {
 //                            val intent = Intent(this@LoginActivity, LandingPagePasienActivity::class.java)
 //                            startActivity(intent)
                         } else {
                             val intent = Intent(this@LoginActivity, DokterActivity::class.java)
+//                            intent.putExtra("nama", res?.name)
+                            intent.putExtra("token", "Bearer " + res?.token)
                             startActivity(intent)
 //                            finish()
                         }
