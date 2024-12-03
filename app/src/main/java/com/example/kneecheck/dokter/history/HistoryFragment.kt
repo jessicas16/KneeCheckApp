@@ -1,15 +1,17 @@
-package com.example.kneecheck.dokter
+package com.example.kneecheck.dokter.history
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.example.kneecheck.databinding.FragmentScanBinding
+import androidx.lifecycle.ViewModelProvider
+import com.example.kneecheck.databinding.FragmentHistoryBinding
 
-class ScanFragment : Fragment() {
+class HistoryFragment : Fragment() {
 
-    private var _binding: FragmentScanBinding? = null
+    private var _binding: FragmentHistoryBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -20,7 +22,7 @@ class ScanFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentScanBinding.inflate(inflater, container, false)
+        _binding = FragmentHistoryBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         return root
