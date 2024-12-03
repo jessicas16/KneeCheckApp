@@ -8,3 +8,8 @@ data class BasicDRO(
     var message: String,
     var data: Any?
 )
+
+data class LoginDRO(
+    var token : String,
+    var userType : String
+)

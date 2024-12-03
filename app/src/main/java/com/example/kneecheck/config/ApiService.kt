@@ -1,6 +1,7 @@
 package com.example.kneecheck.config
 
 import com.example.kneecheck.entity.BasicDRO
+import com.example.kneecheck.entity.LoginDRO
 import com.example.kneecheck.entity.loginDTO
 import com.example.kneecheck.entity.registerDokterDTO
 import com.example.kneecheck.entity.registerPasienDTO
@@ -16,7 +17,7 @@ interface ApiService {
     @POST("login")
     suspend fun login(
         @Body user : loginDTO
-    ): Any
+    ): LoginDRO
 
     @POST("register/pasien")
     suspend fun registerPasien(
@@ -27,6 +28,4 @@ interface ApiService {
     suspend fun registerDokter(
         @Body regDokter : registerDokterDTO
     ): Any
-
-
 }

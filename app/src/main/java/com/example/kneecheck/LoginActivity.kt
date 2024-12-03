@@ -58,9 +58,16 @@ class LoginActivity : AppCompatActivity() {
                     password = password
                 )
                 try {
-                    repo?.login(login)
+                    val res = repo?.login(login)
                     mainScope.launch {
                         Toast.makeText(this@LoginActivity, "Login Success", Toast.LENGTH_SHORT).show()
+                        if (res?.userType == "pasien") {
+//                            val intent = Intent(this@LoginActivity, LandingPagePasienActivity::class.java)
+//                            startActivity(intent)
+                        } else {
+//                            val intent = Intent(this@LoginActivity, LandingPageDokterActivity::class.java)
+//                            startActivity(intent)
+                        }
                     }
                 } catch (e: Exception) {
                     Log.e("Error Login", e.message.toString())
