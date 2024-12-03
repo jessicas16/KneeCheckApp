@@ -3,9 +3,11 @@ package com.example.kneecheck.dokter
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.kneecheck.R
 import com.example.kneecheck.config.ApiConfiguration
@@ -42,7 +44,12 @@ class DashboardFragment : Fragment() {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        binding.tvNamaDokter.text = "hailsdafjjlasdjhadsjksdaljkasdljkdasljksd"
+        val id = arguments?.getString("id")
+        val name = arguments?.getString("name")
+        val token = arguments?.getString("token")
+        Log.d("ID dashboardskjsksk", id.toString())
+
+        binding.tvNamaDokter.text = name
 
         ioScope.launch {
 

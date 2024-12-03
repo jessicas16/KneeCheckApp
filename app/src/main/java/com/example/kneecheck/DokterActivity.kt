@@ -18,7 +18,20 @@ class DokterActivity : AppCompatActivity() {
         setContentView(binding.root)
         val navView: BottomNavigationView = binding.navView
 
+        val id = intent.getStringExtra("id")
+        val name = intent.getStringExtra("name")
+        val token = intent.getStringExtra("token")
+
+
+
+        val bundle = Bundle().apply {
+            putString("id", id)
+            putString("name", name)
+            putString("token", token)
+        }
+
         val navController = findNavController(R.id.nav_host_fragment_activity_dokter)
+        navController.navigate(R.id.navigation_dashboard, bundle)
         navView.setupWithNavController(navController)
     }
 }
