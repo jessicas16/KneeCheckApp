@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.kneecheck.databinding.FragmentProfileBinding
 
-class ScanFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
     private var _binding: FragmentProfileBinding? = null
 

@@ -1,4 +1,4 @@
-package com.example.kneecheck.dokter.dashboard
+package com.example.kneecheck.dokter
 
 import android.graphics.Color
 import android.graphics.Typeface
