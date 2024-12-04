@@ -3,14 +3,13 @@ package com.example.kneecheck
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kneecheck.config.ApiConfiguration
 import com.example.kneecheck.config.DefaultRepo
 import com.example.kneecheck.databinding.ActivityLoginBinding
+import com.example.kneecheck.dokter.DokterActivity
 import com.example.kneecheck.entity.loginDTO
 import com.example.kneecheck.pasien.LandingPagePasienActivity
 import kotlinx.coroutines.CoroutineScope

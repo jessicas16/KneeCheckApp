@@ -27,4 +27,6 @@
     <string name="xray_image_description">gambar scan</string>
     <string name="gallery_button_description">galeri</string>
     <string name="check_button_description">periksa</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

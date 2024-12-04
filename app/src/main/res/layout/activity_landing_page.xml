@@ -24,9 +24,10 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/tombol_mulai_landing_pasien"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="706dp"/>
+        android:layout_marginTop="706dp"
+        android:background="@drawable/tombol_mulai_landing_pasien"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:layout_width="wrap_content"

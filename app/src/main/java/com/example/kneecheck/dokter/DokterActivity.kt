@@ -1,10 +1,11 @@
-package com.example.kneecheck
+package com.example.kneecheck.dokter
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.kneecheck.R
 import com.example.kneecheck.databinding.ActivityDokterBinding
 
 class DokterActivity : AppCompatActivity() {
@@ -31,7 +32,7 @@ class DokterActivity : AppCompatActivity() {
         }
 
         val navController = findNavController(R.id.nav_host_fragment_activity_dokter)
-        navController.navigate(R.id.navigation_dashboard, bundle)
+        navController.navigate(R.id.nav_host_fragment_activity_bottom_navigation_dokter, bundle)
         navView.setupWithNavController(navController)
     }
 }

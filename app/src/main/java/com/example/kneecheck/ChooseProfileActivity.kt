@@ -4,10 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.kneecheck.databinding.ActivityChooseProfileBinding
-import com.example.kneecheck.databinding.ActivityLoginBinding
+import com.example.kneecheck.dokter.RegisterDokterActivity
 
 class ChooseProfileActivity : AppCompatActivity() {
     private lateinit var binding : ActivityChooseProfileBinding

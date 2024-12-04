@@ -1,4 +1,4 @@
-package com.example.kneecheck
+package com.example.kneecheck.dokter
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,6 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.kneecheck.R
 import com.example.kneecheck.databinding.ActivityBottomNavigationDokterBinding
 
 class BottomNavigationDokter : AppCompatActivity() {
@@ -27,7 +28,10 @@ class BottomNavigationDokter : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_dashboarddokter, R.id.navigation_scandokter, R.id.navigation_historydokter, R.id.navigation_profiledokter
+                R.id.navigation_dashboarddokter,
+                R.id.navigation_scandokter,
+                R.id.navigation_historydokter,
+                R.id.navigation_profiledokter
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

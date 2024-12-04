@@ -44,10 +44,5 @@ interface ApiService {
     @GET("landing-page")
     suspend fun getLandingPage(): LandingPageResponse
 
-    @Multipart
-    @POST("predict")
-    suspend fun predictXRay(
-        @Part img: MultipartBody.Part
-    ): Response<ScanResultResponse>
 
 }

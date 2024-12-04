@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_register_dokter"
-    tools:context=".RegisterDokterActivity">
+    tools:context=".dokter.RegisterDokterActivity">
 
     <ImageView
         android:id="@+id/imageView"
