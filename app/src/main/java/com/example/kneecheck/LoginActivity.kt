@@ -66,8 +66,7 @@ class LoginActivity : AppCompatActivity() {
 //                            startActivity(intent)
                         } else {
                             val intent = Intent(this@LoginActivity, DokterActivity::class.java)
-                            intent.putExtra("id", res?.id)
-                            intent.putExtra("name", res?.name)
+//                            intent.putExtra("nama", res?.name)
                             intent.putExtra("token", "Bearer " + res?.token)
                             startActivity(intent)
 //                            finish()
