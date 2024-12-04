@@ -20,10 +20,6 @@
         android:theme="@style/Theme.KneeCheck"
         tools:targetApi="31">
         <activity
-            android:name=".BottomNavigationDokter"
-            android:exported="false"
-            android:label="@string/title_activity_bottom_navigation_dokter" />
-        <activity
             android:name=".pasien.LandingPageActivity"
             android:exported="false" />
         <activity

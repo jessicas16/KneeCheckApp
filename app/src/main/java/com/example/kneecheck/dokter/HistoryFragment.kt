@@ -5,11 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.kneecheck.databinding.FragmentScanDokterBinding
+import com.example.kneecheck.databinding.FragmentHistoryBinding
 
-class ScanDokterFragment : Fragment() {
+class HistoryFragment : Fragment() {
 
-    private var _binding: FragmentScanDokterBinding? = null
+    private var _binding: FragmentHistoryBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -20,7 +20,7 @@ class ScanDokterFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentScanDokterBinding.inflate(inflater, container, false)
+        _binding = FragmentHistoryBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         return root
