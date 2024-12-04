@@ -25,17 +25,17 @@ data class dashboardDokter(
 data class dashboardDokterData(
     val age: ageData,
     val gender: genderData,
-    val totalScanned : Int,
-    val level : levelData
+    val level : levelData,
+    val totalScanned : Int
 )
 
 data class ageData(
-    val age: Int,
+    val average: String,
     val total: Int
 )
 
 data class genderData(
-    val gender : String,
+    val average : String,
     val total : Int
 )
 
