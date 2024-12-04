@@ -95,6 +95,7 @@
         android:background="@drawable/rectangle_profile_pasien"/>
 
     <ImageButton
+        android:id="@+id/btnblmpunyaakun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/tombol_simpan_histori_1"
