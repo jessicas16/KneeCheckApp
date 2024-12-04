@@ -12,6 +12,7 @@ import com.example.kneecheck.config.ApiConfiguration
 import com.example.kneecheck.config.DefaultRepo
 import com.example.kneecheck.databinding.ActivityLoginBinding
 import com.example.kneecheck.entity.loginDTO
+import com.example.kneecheck.pasien.LandingPagePasienActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -62,15 +63,15 @@ class LoginActivity : AppCompatActivity() {
                     mainScope.launch {
                         Toast.makeText(this@LoginActivity, "Login Success", Toast.LENGTH_SHORT).show()
                         if (res?.userType == "Pasien") {
-//                            val intent = Intent(this@LoginActivity, LandingPagePasienActivity::class.java)
-//                            startActivity(intent)
+                            val intent = Intent(this@LoginActivity, LandingPagePasienActivity::class.java)
+                            startActivity(intent)
                         } else {
                             val intent = Intent(this@LoginActivity, DokterActivity::class.java)
                             intent.putExtra("id", res?.id)
                             intent.putExtra("name", res?.name)
                             intent.putExtra("token", "Bearer " + res?.token)
                             startActivity(intent)
-//                            finish()
+                            finish()
                         }
                     }
                 } catch (e: Exception) {

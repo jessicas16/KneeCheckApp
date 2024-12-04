@@ -3,17 +3,13 @@ package com.example.kneecheck.pasien
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.example.kneecheck.R
 import com.example.kneecheck.config.ApiConfiguration
-import com.example.kneecheck.config.DefaultRepo
 import kotlinx.coroutines.launch
 
-class LandingPageActivity : AppCompatActivity() {
+class LandingPagePasienActivity : AppCompatActivity() {
 
     // Deklarasi TextView untuk update UI
     private lateinit var usiaTextView: TextView

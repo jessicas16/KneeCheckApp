@@ -24,11 +24,11 @@
             android:exported="false"
             android:label="@string/title_activity_bottom_navigation_dokter" />
         <activity
-            android:name=".pasien.LandingPageActivity"
-            android:exported="false" />
+            android:name=".pasien.LandingPagePasienActivity"
+            android:exported="true" />
         <activity
             android:name=".DokterActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".RegisterDokterActivity"
             android:exported="false" />
