@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_biru"
+    tools:context=".dokter.uidokter.scandokter.SudahPunyaAkunFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_putih_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Data Pasien"
+        android:fontFamily="@font/inter_extrabold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:hint="Masukkan Nama Pasien"
+        android:paddingStart="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp"
+        android:hint="Masukkan Tanggal Lahir Pasien"
+        android:paddingStart="20dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tombol_cari_pasien"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="218dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil Pencarian"
+        android:fontFamily="@font/inter_extrabold"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="333dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_putih_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="377dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_putih_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_putih_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="583dp"/>
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="24dp"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:fontFamily="@font/inter_bold"
+        android:layout_marginTop="401dp"
+        android:layout_marginStart="26dp"/>
+
+    <TextView
+        android:layout_width="157dp"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="431dp"
+        android:layout_marginStart="26dp"/>
+
+    <TextView
+        android:layout_width="66dp"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="407dp"
+        android:layout_marginStart="303dp"/>
+
+    <TextView
+        android:layout_width="31dp"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="428dp"
+        android:layout_marginStart="337dp"/>
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="24dp"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:fontFamily="@font/inter_bold"
+        android:layout_marginTop="504dp"
+        android:layout_marginStart="26dp"/>
+
+    <TextView
+        android:layout_width="157dp"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="534dp"
+        android:layout_marginStart="26dp"/>
+
+    <TextView
+        android:layout_width="66dp"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="510dp"
+        android:layout_marginStart="303dp"/>
+
+    <TextView
+        android:layout_width="31dp"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="534dp"
+        android:layout_marginStart="337dp"/>
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="24dp"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:fontFamily="@font/inter_bold"
+        android:layout_marginTop="607dp"
+        android:layout_marginStart="26dp"/>
+
+    <TextView
+        android:layout_width="157dp"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="637dp"
+        android:layout_marginStart="26dp"/>
+
+    <TextView
+        android:layout_width="66dp"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="613dp"
+        android:layout_marginStart="303dp"/>
+
+    <TextView
+        android:layout_width="31dp"
+        android:layout_height="15dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="637dp"
+        android:layout_marginStart="337dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pasien tidak ditemukan?"
+        android:fontFamily="@font/inter"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="726dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tombol_tambah_data_baru"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="756dp"/>
+
+</RelativeLayout>

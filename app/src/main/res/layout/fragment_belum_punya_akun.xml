@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_biru"
+    tools:context=".dokter.uidokter.scandokter.BelumPunyaAkunFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_putih_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Data Pasien"
+        android:fontFamily="@font/inter_extrabold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Nama Lengkap:"
+        android:fontFamily="@font/inter_bold"
+        android:textSize="12sp"
+        android:layout_marginTop="177dp"
+        android:layout_marginStart="52dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="206dp"
+        android:layout_marginStart="52dp"
+        android:background="@drawable/rectangle_profile_pasien"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Jenis Kelamin:"
+        android:fontFamily="@font/inter_bold"
+        android:textSize="12sp"
+        android:layout_marginTop="271dp"
+        android:layout_marginStart="52dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="299dp"
+        android:layout_marginStart="52dp"
+        android:background="@drawable/rectangle_profile_pasien"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Tanggal Lahir:"
+        android:fontFamily="@font/inter_bold"
+        android:textSize="12sp"
+        android:layout_marginTop="363dp"
+        android:layout_marginStart="52dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="391dp"
+        android:layout_marginStart="52dp"
+        android:background="@drawable/rectangle_profile_pasien"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Kota Domisili:"
+        android:fontFamily="@font/inter_bold"
+        android:textSize="12sp"
+        android:layout_marginTop="457dp"
+        android:layout_marginStart="52dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="484dp"
+        android:layout_marginStart="52dp"
+        android:background="@drawable/rectangle_profile_pasien"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tombol_simpan_histori_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="568dp"/>
+
+</RelativeLayout>
